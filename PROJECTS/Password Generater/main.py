@@ -6,12 +6,14 @@ f2=string.ascii_uppercase
 f3=string.digits
 f4=string.punctuation
 
-user=int(input("Enter pass Lenght "))
 
-f=[]
-f.extend(f1)
-f.extend(f2)
-f.extend(f3)
-f.extend(f4)
+x=[]
 
-print("".join(random.sample(f,user)))
+x.extend(f1)
+x.extend(f2)
+x.extend(f3)
+x.extend(f4)
+
+user=int(input('Enter a Number: '))
+
+print(''.join(random.sample(x,user)))
